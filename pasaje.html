@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pasaje.css">
+</head>
+<body>
+    <header>
+        <h2> <i class="bi bi-airplane"></i> Check-IN.com </h2>
+        <nav>
+            <a href="">Informacion</a>
+            <a href="">Presentacion</a>
+            <a href="">Contactanos</a>
+            <a href="./index.html">Check-in</a>
+            <a href="">Compra Pasaje</a>
+        </nav>
+    </header>
+    <main class="contenedorPrincipal">
+        <form id="formularioPasajes">
+            <div class="inputContenedor">
+                <label for="nombre">Ingrese su Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="inputContenedor">
+                <label for="apellido">Ingrese su Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+            </div>
+            <div class="inputContenedor">
+                <label for="TipoDNI">Seleccione el tipo de DNI</label>
+                <select name="TipoDNI" id="TipoDNI">
+                    <option value="dni">Documento Nacional de Identidad</option>
+                    <option value="lec">Libreta Electoral</option>
+                    <option value="pasaporte">Pasaporte</option>
+                </select>
+            </div>
+            <div class="inputContenedor">
+                <label for="NumeroDocumento">Ingrese su Nombre</label>
+                <input type="number" id="NumeroDocumento" name="NumeroDocumento" placeholder="Numero de Documento" required>
+            </div>
+            <div class="inputContenedor">
+                <label for="origen">Ingrese su Nombre</label>
+                <input type="text" id="origen" name="origen" placeholder="Origen" required>
+            </div>
+            <div class="inputContenedor">
+                <label for="destino">Ingrese su Nombre</label>
+                <input type="text" id="destino" name="destino" placeholder="Destino" required>
+            </div>
+            <div class="inputContenedor">
+                <label for="fecha">Ingrese su Nombre</label>
+                <input type="date" id="fecha" name="fecha" placeholder="Fecha embarque" required>
+            </div>
+            <div class="inputContenedor">
+                <label for="horario">Ingrese su Nombre</label>
+                <input type="time" id="horario" name="horario" placeholder="Hora de embarque" required>
+            </div>
+            <input type="submit" value="Comprar Pasaje" class="btnComprar">
+        </form>
+        <div class="contenedorPasajes"></div>
+    </main>
+    <script src="./js/pasaje.js"></script>
+</body>
+</html>
